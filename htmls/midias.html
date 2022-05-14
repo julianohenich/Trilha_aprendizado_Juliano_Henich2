@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimidias</title>
+</head>
+<body>
+    <h1>Multimidias</h1>
+    <p>É uma forma de comunicação que combina diferentes formas de conteudo, tais como: <b>texto, imagem, audio, video</b> em uma única apresentação.</p>
+    <h2>Tag iframe</h2>
+    <p>A tag iframe possibilita incorporar ao conteúdo html vários tipos de multimidias</p>
+    <h3>Incorporando um site dentro do outro</h3>
+    <iframe src="https://www.youtube.com/" width="500" height="500" frameborder="0"></iframe>
+    <iframe src="https://irati.ifpr.edu.br/" width="500" height="500" frameborder="0"></iframe>
+    
+    <h3>Incorporando audio ao site</h3>
+    <iframe width="20%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/141863537&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nuclearblastrecords" title="NuclearBlastRecords" target="_blank" style="color: #cccccc; text-decoration: none;">NuclearBlastRecords</a> · <a href="https://soundcloud.com/nuclearblastrecords/sabaton-to-hell-and-back" title="SABATON - To Hell And Back" target="_blank" style="color: #cccccc; text-decoration: none;">SABATON - To Hell And Back</a></div>
+
+    <h3>Incorporando videos ao site</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cwqc1fjTLeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>Tags de audio</h3>
+    <audio preload="metadata" controls>
+        <source src="../midias/audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+        <source src="../midias/audio/Hey Sailor - Letter Box.ogg" type="audio/ogg"> 
+        <source src="../midias/audio/Hey Sailor - Letter Box.wav" type="audio/wav"> 
+    </audio>
+
+    <h3>Tags de videos</h3> 
+    <video poster="../midias/video/Bike.jpg" controls>
+        <source src="../midias/video/_Bike.mp4" type="video/mp4">
+        <source src="../midias/video/_Bike.ogv" type="video/ogv">
+        <source src="../midias/video/_Bike.webm"type="video/webm">
+    </video>
+    
+    <h3>Tag picture</h3>
+    <picture>
+        <source media="(max-width:500px)" srcset="../midias/img/bike_110.jpg">
+        <source media="(max-width:700px)" srcset="../midias/img/bike_320.jpg">
+        <source media="(max-width:1000px)" srcset="../midias/img/bike_full.jpg">
+        <img src="../midias/img/bike_full.jpg" alt="Full">
+    </picture>
+</body>
+</html>
